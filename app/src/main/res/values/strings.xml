@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">P_PasswordGenerator</string>
+    <string name="textview_PasswordRules">
+        <b>Password Rules -</b>\n
+        1. Length between 8 to 20 characters\n
+        2. Atleast 1 uppercase, 1 lowercase, 1 digit, 1 special\n
+        3. spaces not allowed\n
+    </string>
+</resources>
