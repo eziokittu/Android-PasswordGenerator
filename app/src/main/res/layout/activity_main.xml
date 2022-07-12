@@ -24,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25sp"
+            android:background="#8FF18F"
             android:gravity="center"
             android:text="Password Generator and Validator"
             android:textColor="#730AE3"
@@ -47,10 +48,13 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:layout_weight="1"
+                android:background="#151010"
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Enter Password"
                 android:inputType="textPersonName"
                 android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
                 android:textSize="20sp" />
 
             <Button
@@ -104,9 +108,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:layout_weight="3"
+                android:background="#150E0E"
                 android:gravity="center"
                 android:hint="Random Password"
                 android:textColor="#08FF00"
+                android:textColorHint="#80FFFFFF"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -135,6 +141,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="#2B2020"
             android:gravity="center"
             android:padding="14sp"
             android:text="@string/textview_PasswordRules"
