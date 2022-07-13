@@ -6,6 +6,7 @@ import java.util.*;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,19 +17,20 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText editText1;
-    Button btn_save1, btn_save2, btn_validate, btn_generate;
+    Button btn_save1, btn_save2, btn_validate, btn_generate, btn_PasswordManager;
     TextView textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editText1 = findViewById(R.id.editText1);
-        btn_save1 = findViewById(R.id.btn_save1);
-        btn_save2 = findViewById(R.id.btn_save2);
-        btn_validate = findViewById(R.id.btn_validate);
-        btn_generate = findViewById(R.id.btn_generate);
-        textView2 = findViewById(R.id.textView2);
+        editText1 = findViewById(R.id.activity1_editText1);
+        btn_save1 = findViewById(R.id.activity1_btn_save1);
+        btn_save2 = findViewById(R.id.activity1_btn_save2);
+        btn_validate = findViewById(R.id.activity1_btn_validate);
+        btn_generate = findViewById(R.id.activity1_btn_generate);
+        btn_PasswordManager = findViewById(R.id.activity1_btn_PasswordManager);
+        textView2 = findViewById(R.id.activity1_textView2);
 
         btn_validate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +76,14 @@ public class MainActivity extends AppCompatActivity {
                 clipboard.setPrimaryClip(clip);
 
                 Toast.makeText(MainActivity.this, "Password is saved in clipboard", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btn_PasswordManager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
             }
         });
     }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1F21"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/activity2_btn_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="15sp"
+            android:backgroundTint="#EBC318"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="BACK"
+            android:textColor="#070101"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/activity2_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#2B2020"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="... DATABASE Work in progress ..."
+            android:textColor="#EF5350"
+            android:textSize="24sp"
+            app:autoSizeMaxTextSize="24sp"
+            app:autoSizeMinTextSize="16sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

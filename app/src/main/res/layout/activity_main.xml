@@ -20,13 +20,13 @@
 
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/activity1_textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="25sp"
+            android:layout_margin="15sp"
             android:background="#8FF18F"
             android:gravity="center"
-            android:text="Password Generator and Validator"
+            android:text="Password Generator, Validator and Manager"
             android:textColor="#730AE3"
             android:textSize="34sp" />
 
@@ -43,7 +43,7 @@
             android:showDividers="middle">
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/activity1_editText1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
@@ -59,7 +59,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/btn_validate"
+                android:id="@+id/activity1_btn_validate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
@@ -74,7 +74,7 @@
             android:background="#083FE3" />
 
         <Button
-            android:id="@+id/btn_save1"
+            android:id="@+id/activity1_btn_save1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -96,7 +96,7 @@
             android:showDividers="middle">
 
             <Button
-                android:id="@+id/btn_generate"
+                android:id="@+id/activity1_btn_generate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
@@ -104,7 +104,7 @@
                 android:text="Genarate" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/activity1_textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
@@ -124,12 +124,13 @@
             android:background="#083FE3" />
 
         <Button
-            android:id="@+id/btn_save2"
+            android:id="@+id/activity1_btn_save2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10sp"
             android:layout_weight="1"
+            android:minHeight="48dp"
             android:text="Save to clipboard" />
 
         <View
@@ -138,16 +139,28 @@
             android:background="#083FE3" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/activity1_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="#2B2020"
             android:gravity="center"
-            android:padding="14sp"
+            android:padding="10sp"
             android:text="@string/textview_PasswordRules"
-            android:textAlignment="viewStart"
-            android:textColor="#A41B1B"
+            android:textColor="#EF5350"
             android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/activity1_btn_PasswordManager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15sp"
+            android:backgroundTint="#EBC318"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Password Manager"
+            android:textColor="#070101"
+            android:textSize="24sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
