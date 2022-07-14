@@ -25,18 +25,5 @@
             android:textColor="#070101"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/activity2_TextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#2B2020"
-            android:gravity="center"
-            android:padding="10sp"
-            android:text="... DATABASE Work in progress ..."
-            android:textColor="#EF5350"
-            android:textSize="24sp"
-            app:autoSizeMaxTextSize="24sp"
-            app:autoSizeMinTextSize="16sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -150,6 +150,11 @@
             android:textColor="#EF5350"
             android:textSize="16sp" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#083FE3" />
+
         <Button
             android:id="@+id/activity1_btn_PasswordManager"
             android:layout_width="wrap_content"
