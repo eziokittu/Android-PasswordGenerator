@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
     EditText editText1;
     Button btn_save1, btn_save2, btn_validate, btn_generate, btn_PasswordManager;
     TextView textView2;
-    DBHelper DB;
+//    DBHelper DB;
 
-    int DB_SerialCount = 0;
+//    int DB_SerialCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btn_generate = findViewById(R.id.activity1_btn_generate);
         btn_PasswordManager = findViewById(R.id.activity1_btn_PasswordManager);
         textView2 = findViewById(R.id.activity1_textView2);
-        DB = new DBHelper(getApplicationContext());
+//        DB = new DBHelper(getApplicationContext());
 
         btn_validate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Password is saved in clipboard", Toast.LENGTH_SHORT).show();
 
                 // Add this password to Database
-                DB_SerialCount+=1;
-                Boolean checkinsertdata = DB.insertuserdata(new Data(DB_SerialCount, password));
-                if(checkinsertdata==true)
-                    Toast.makeText(MainActivity.this, "New Password Inserted", Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(MainActivity.this, "New Password Not Inserted", Toast.LENGTH_SHORT).show();
+//                DB_SerialCount+=1;
+//                Boolean checkinsertdata = DB.insertuserdata(new Data(DB_SerialCount, password));
+//                if(checkinsertdata==true)
+//                    Toast.makeText(MainActivity.this, "New Password Inserted", Toast.LENGTH_SHORT).show();
+//                else
+//                    Toast.makeText(MainActivity.this, "New Password Not Inserted", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -90,12 +90,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Password is saved in clipboard", Toast.LENGTH_SHORT).show();
 
                 // Add this password to Database
-                DB_SerialCount+=1;
-                Boolean checkinsertdata = DB.insertuserdata(new Data(DB_SerialCount, password));
-                if(checkinsertdata==true)
-                    Toast.makeText(MainActivity.this, "New Password Inserted", Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(MainActivity.this, "New Password Not Inserted", Toast.LENGTH_SHORT).show();
+//                DB_SerialCount+=1;
+//                Boolean checkinsertdata = DB.insertuserdata(new Data(DB_SerialCount, password));
+//                if(checkinsertdata==true)
+//                    Toast.makeText(MainActivity.this, "New Password Inserted", Toast.LENGTH_SHORT).show();
+//                else
+//                    Toast.makeText(MainActivity.this, "New Password Not Inserted", Toast.LENGTH_SHORT).show();
             }
         });
 
